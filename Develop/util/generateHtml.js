@@ -79,8 +79,12 @@ const generateTeam = team => {
 
 }
 
-// export function to generate entire page
-module.exports = team => {
+/**
+ * Function to create html string
+ * @param {team} Array of employee objects.
+ * @returns {string} HTML string
+ */
+const generateHtmlFunction = team => {
 
     return `
     <!DOCTYPE html>
@@ -113,3 +117,6 @@ module.exports = team => {
 </html>
     `;
 };
+
+
+module.exports = generateHtmlFunction;
